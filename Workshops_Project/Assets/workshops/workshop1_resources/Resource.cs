@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Resource : MonoBehaviour {
@@ -8,6 +9,10 @@ public class Resource : MonoBehaviour {
     public int Amount;
     public int StartAmount;
     public Text resourceText;
+
+    public UnityEvent evt;
+
+
 
     public void AddAmount(int amount)
     {
@@ -22,6 +27,6 @@ public class Resource : MonoBehaviour {
 
     private void UpdateUI()
     {
-        resourceText.text = Amount.ToString();
+        evt.Invoke();
     }
 }

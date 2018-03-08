@@ -258,7 +258,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455237675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -250, y: 156.5, z: 0}
+  m_LocalPosition: {x: -304, y: 190, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1030909271}
@@ -387,6 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 598948689}
   - component: {fileID: 598948690}
+  - component: {fileID: 598948691}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -421,6 +422,24 @@ MonoBehaviour:
   Amount: 0
   StartAmount: 0
   resourceText: {fileID: 1063422622}
+  evt:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &598948691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598948688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612892d974e86ae46a2f62f06194143b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: {fileID: 1063422622}
+  Label: {fileID: 1030909272}
 --- !u!1 &707841468
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +819,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202748714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250, y: 156.5, z: 0}
+  m_LocalPosition: {x: 304, y: 190, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 455237676}
@@ -933,7 +952,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2080367076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 250, y: -156.5, z: 0}
+  m_LocalPosition: {x: 304, y: -190, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 450331696}

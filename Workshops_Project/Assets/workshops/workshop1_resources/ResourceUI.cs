@@ -19,8 +19,8 @@ public class ResourceUI : MonoBehaviour {
 
     void Start()
     {
-
         UpdateUI();
+        resource.evt.AddListener(UpdateUI);
     }
 
     public void UpdateUI()
