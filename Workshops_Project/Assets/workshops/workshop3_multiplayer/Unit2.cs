@@ -9,4 +9,5 @@ public class Unit2 : Ownable
     public int AttackPower;
     public int DefensePower;
     public int Health;
+
 }

@@ -13,7 +13,7 @@ public class Map : MonoBehaviour
 
     public float TileOffset = 1;
 
-    public void Start()
+    void Start()
     {
         Spawn();
     }

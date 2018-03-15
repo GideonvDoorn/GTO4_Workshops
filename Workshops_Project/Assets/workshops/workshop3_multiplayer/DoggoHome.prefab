@@ -497,6 +497,7 @@ MonoBehaviour:
   Owner: {fileID: 0}
   Name: DoggoHome
   ProtoType: {fileID: 0}
+  UI: {fileID: 223755141788167192}
 --- !u!114 &114954822363219062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -606,7 +607,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1257495484593470}
   m_LocalRotation: {x: 0.13775486, y: -0, z: -0, w: 0.9904664}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0019999743}
+  m_LocalPosition: {x: 0, y: 0.7260132, z: -0.0019999743}
   m_LocalScale: {x: 0.0017936655, y: 0.0017936663, z: 0.0017936663}
   m_Children:
   - {fileID: 224868281043729960}

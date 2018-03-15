@@ -14,6 +14,9 @@ public class TurnManager : MonoBehaviour
     public List<Material> playerMaterials;
     [Range(1,4)] public int PlayerCount;
 
+    public GameObject selectedObject;
+
+
     void Start()
     {
         for (int i = 0; i < PlayerCount; i++)
@@ -43,6 +46,7 @@ public class TurnManager : MonoBehaviour
 
     public void NextTurn()
     {
+        selectedObject = null;
         if (CurrentPlayer == (players.Count -1))
         {
             CurrentPlayer = 0;
@@ -82,5 +86,18 @@ public class TurnManager : MonoBehaviour
         }
         Debug.LogError("No player has been found!");
         return null;
+    }
+
+    public void changeSelectedObject(GameObject go)
+    {
+        if(go.GetComponent<Barracks>() != null)
+        {
+            go.GetComponent<Barracks>().UI.gameObject.SetActive(true);
+        }
+        else if(go.GetComponent<Barracks>() == null && selectedObject.GetComponent<Barracks>().UI != null)
+        {
+            selectedObject.GetComponent<Barracks>().UI.gameObject.SetActive(false);
+        }
+        selectedObject = go;
     }
 }

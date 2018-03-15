@@ -7,6 +7,7 @@ TagManager:
   - Factory
   - Resource
   - Map
+  - TurnManager
   layers:
   - Default
   - TransparentFX
