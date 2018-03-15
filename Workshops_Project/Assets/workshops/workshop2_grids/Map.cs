@@ -18,7 +18,6 @@ public class Map : MonoBehaviour
         Spawn();
     }
 
-
     public void Spawn()
     {
         float xoffset = 0;
